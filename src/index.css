@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+}
+
+.container{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  background-color: rgb(32, 33, 51);
+  width: 400px;
+  height: 400px;
+  color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.paragraph{
+  color:gray;
+}
+
+.btn{
+  background-color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  border: none;
+  border-radius: 30px;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 380px;
+ 
+}
+
+.ratings{
+  display: flex;
+  justify-content: space-between;
+  margin:0px 20px;
+}
+
+/*To different classnames in the same div we can apply display flex and justify content to bring them to the center of the circles*/
+.one,
+.two,
+.three,
+.four,
+.five{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(153, 144, 144, 0.24);
+  width: 50px;
+ height: 50px;
+  border-radius: 50px;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+
+
+
+
+/*Always the elements must be inside a div so that we can center them with justify content. And always we set display flex so that the justify content to work*/
+.btn-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 400px;
+}
+
+.star{
+  background-color: rgba(153, 144, 144, 0.24);
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.img{
+  width:150px;
+  margin-top: 50px;
+  
+}
+
+.container-onClick{
+
+ background-color: rgb(32, 33, 51);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  padding: 30px;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+}
